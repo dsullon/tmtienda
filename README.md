@@ -1,2 +1,3 @@
 # tmtienda
-Proyecto Tienda: Instituro
+Proyecto Tienda: 
+Instituto SISE (Turno Mañana)

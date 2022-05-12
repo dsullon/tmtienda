@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Tienda.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="Assets/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="Assets/css/app.css" rel="stylesheet" type="text/css" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="cphHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="nav-bar">
+                <div class="nav-image">
+                    <img class="img-logo" src="Assets/images/logo.png" />
+
+                    <div class="menu-mobile">
+                        <img src="Assets/images/barras.svg" />
+                    </div>
+                </div>
+
+                <nav class="navegacion">
+                    <a href="default.aspx">Inicio</a>
+                    <a href="contacto.aspx">Contacto</a>
+                    <a href="login.aspx">Login</a>
+                    <a href="productos.aspx">Productos</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="cphMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <p>
+                Todos los derechos reservados - &copy; Alex Sullon
+            </p>
+        </div>
+    </footer>
+
+    <script src="Assets/js/app.js"></script>
+</body>
+</html>

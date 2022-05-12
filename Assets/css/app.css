@@ -1,0 +1,142 @@
+﻿html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 2rem;
+}
+
+a {
+   text-decoration: none;
+}
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+
+.header {
+    height: 20rem;
+    background-image: url(../images/fondo_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+}
+
+@media(min-width: 768px){
+    .header {
+        height: 40rem;
+    }
+}
+
+.img-logo {
+    width: 15rem;
+}
+
+@media(min-width: 768px){
+    .img-logo {
+        width: 30rem;
+    }
+}
+
+
+/*Navegacion*/
+
+@media(min-width: 768px){
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.navegacion {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
+
+@media(min-width: 768px){
+    .navegacion {
+        display: flex;
+        column-gap: 2rem;
+    }
+}
+
+.navegacion a {
+    display:block;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Menu mobile*/
+.menu-mobile:hover {
+    cursor: pointer;
+}
+
+@media(min-width: 768px) {
+    .menu-mobile {
+        display: none;
+    }
+}
+
+.menu-mobile img {
+    width: 4rem;
+}
+
+
+.nav-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Servicios*/
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1rem;
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c4cac7;
+    padding: 0 2rem;
+    border-radius: 2rem;
+}
+
+.servicio p {
+    text-align: center;
+}
+
+.servicio_icono {
+    height: 15rem;
+    width: 15rem;
+    background-color: #003f6b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*Footer*/
+.footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}

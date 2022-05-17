@@ -17,8 +17,8 @@ namespace Tienda
         {
             using(var conexion = new SqlConnection(strConexion))
             {
-                conexion.Open();
-                using(var command = new SqlCommand("Select Nombre, Marca, Precio AS PrecioProducto " +
+                using(var command = new SqlCommand("Select IdProducto AS Id, Nombre, Marca, " +
+                    "Precio AS PrecioProducto " +
                     "From producto", conexion))
                 {
                     var ds = new DataSet();

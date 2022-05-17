@@ -180,7 +180,8 @@ a {
 }
 
 .formulario input:not([type="submit"]),
-.formulario textarea {
+.formulario textarea,
+.formulario select{
     width: 100%;
     padding: 1rem;
     border: .1rem solid #808080;

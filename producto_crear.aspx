@@ -18,7 +18,9 @@
         <asp:TextBox ID="txtSctock" runat="server"></asp:TextBox>
 
         <label for="ddlCategoria">Categoría</label>
-        <asp:DropDownList ID="ddlCategoria" runat="server"></asp:DropDownList>
+        <asp:DropDownList ID="ddlCategoria" runat="server">
+            <asp:ListItem Text="--Seleccione--" Value=""></asp:ListItem>
+        </asp:DropDownList>
 
         <label for="fuFoto">Foto</label>
         <asp:FileUpload ID="fuFoto" runat="server" />
@@ -27,6 +29,6 @@
         <asp:TextBox ID="txtObservacion" TextMode="MultiLine" runat="server"></asp:TextBox>
 
         <asp:Button CssClass="boton" ID="btnGrabar" runat="server" 
-            Text="Actualizar" />
+            Text="Registrar" OnClick="registrar" />
     </fieldset>
 </asp:Content>

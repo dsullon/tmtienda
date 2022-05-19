@@ -72,6 +72,7 @@
     <Content Include="Assets\images\barras.svg" />
     <Content Include="Assets\images\fondo_header.jpg" />
     <Content Include="Assets\images\logo.png" />
+    <Content Include="Assets\images\productos\generico.png" />
     <Content Include="Assets\js\app.js" />
     <Content Include="contacto.aspx" />
     <Content Include="default.aspx" />

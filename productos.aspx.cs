@@ -6,7 +6,7 @@ namespace Tienda
 {
     public partial class productos : System.Web.UI.Page
     {
-        //string strConexion = "Server=(local); Database=Tienda; User=nombre; password=clave";
+        //string strConexion = "Server=(local); Database=Tienda; UserId=nombre; password=clave";
         string strConexion = "Server=(local); Database=Tienda; Integrated Security=true";
         protected void Page_Load(object sender, EventArgs e)
         {
